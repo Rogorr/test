@@ -5,7 +5,6 @@
 $this->title = Yii::$app->name;
 ?>
 
-<?php var_dump($posts)?>
         <section class="bg-text-area">
             <div class="container">
                 <div class="row">
