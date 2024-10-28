@@ -2,7 +2,6 @@
 
 /** @var yii\web\View $this */
 
-// use yii\helpers\Html;
 
 $this->title = Yii::$app->name;
 
@@ -60,23 +59,17 @@ $this->title = Yii::$app->name;
         </div>
     </div>
     <div class="pegination">
-        <!--
-        <ul>
-            <li><i class="fa fa-angle-left" aria-hidden="true"></i></li>
-            <li class="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-        </ul>
--->
 
         <div class="nav-links">
-            <span class="page-numbers current">1</span>
+            <?= \yii\widgets\LinkPager::widget([
+                'pagination' => $pages,
+            ]) ?>
+            <!-- <span class="page-numbers current">1</span>
             <a class="page-numbers" href="#">2</a>
             <a class="page-numbers" href="#">3</a>
             <a class="page-numbers" href="#">4</a>
             <a class="page-numbers" href="#">5</a>
-            <a class="page-numbers" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a class="page-numbers" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
         </div>
     </div>
 </section>
