@@ -58,6 +58,7 @@ $config = [
                 '/' => 'post/index',
                 'post/<id:\d+>' =>'post/view',
                 'category/<alias:[a-zA-Z0-9-]+>' =>'category/view',
+                'post/t' =>'post/test',
             ],
         ],
 
